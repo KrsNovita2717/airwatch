@@ -1,6 +1,8 @@
 const swaggerJSDoc = require('swagger-jsdoc');
 const swaggerUi = require('swagger-ui-express');
-const url = require('url');
+const {
+  SwaggerUIBundle, SwaggerUIStandalonePreset, absolutePath, getAbsoluteFSPath,
+} = require('swagger-ui-dist');
 
 const options = {
   definition: {
